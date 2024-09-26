@@ -119,7 +119,7 @@ export default function GitHubProfileViewer() {
            <i>Search for a GitHub username and view their profile and repositories, search like: Hania-1</i> 
           </CardDescription>
         </CardHeader>
-        <Button onClick={toggleDarkMode} className={`mb-4 ${darkMode ? 'bg-gray-800' : 'bg-gray-400'}`}>
+        <Button onClick={toggleDarkMode} className={`mb-4 ${darkMode ? 'bg-gray-800' : 'bg-gray-300'}`}>
           <b>Toggle Dark Mode</b>
         </Button>
         {/* Form to input GitHub username */}
@@ -130,7 +130,7 @@ export default function GitHubProfileViewer() {
               placeholder="Enter a GitHub username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              className={`flex-1 border rounded-md p-2 ${darkMode ? 'bg-gray-500 text-white' : 'bg-white text-black'}`}
+              className={`flex-1 border rounded-md p-2 ${darkMode ? 'bg-gray-300 text-black' : 'bg-white text-black'}`}
             />
             <Button
               type="submit"
@@ -258,3 +258,4 @@ export default function GitHubProfileViewer() {
     </div>
   );
 }
+
